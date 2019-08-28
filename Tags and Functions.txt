@@ -1,0 +1,23 @@
+			Tags and functions
+
+
+• The <dl> tag defines a description list
+
+• The <base> tag specifies the base URL/target for all relative URLs in a document
+
+• The <fieldset> tag is used to group related elements in a form
+
+• The <legend> tag defines a caption for the <fieldset>element.
+
+• The <canvas> tag is only a container for graphics, you must use a script to actually draw the graphics
+
+• The <figcaption> tag defines a caption for a <figure>element.
+
+• The <figure> tag specifies self-contained content, like illustrations, diagrams, photos, code 
+listings, etc.
+
+• The <progress> tag represents the progress of a task.
+
+• The <iframe> tag specifies an inline frame. An inline frame is used to embed another document within the current HTML document
+
+• The <svg> tag defines a container for SVG graphics.
