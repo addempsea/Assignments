@@ -1,0 +1,343 @@
+.prediction-card {
+  background-color: #000000;
+  border-radius: 16px;
+  padding: 38px;
+  margin: auto;
+  position: relative;
+
+  @media screen and (max-width: 768px) {
+    padding: 20px;
+  }
+
+  &_feedback {
+    border-radius: 30px;
+    background: $white;
+    box-shadow: 0px 4px 25px 0px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: -23px;
+    left: calc((100% - 180px) / 2);
+    height: 36px;
+    width: 180px;
+
+    &_icon {
+      width: 30px;
+      height: 30px;
+      border-radius: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: $light-blue;
+      margin-right: 12px;
+    }
+
+    p {
+      color: $black;
+      font-weight: 600;
+      font-size: 14px;
+
+      @media screen and (max-width: 768px) {
+        padding: 13px;
+      }
+    }
+  }
+
+  &__teams {
+    background-color: #eff3f8;
+    border-radius: 8px;
+    padding: 18px 40px 43px 40px;
+
+    @media screen and (max-width: 768px) {
+      padding: 10px;
+    }
+
+    &--heading {
+      font-style: normal;
+      font-weight: 600;
+      font-size: 12px;
+      line-height: 14px;
+      color: #fff;
+      text-align: center;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+    }
+    &--hasPredicted {
+      display: flex;
+      align-items: center;
+      margin-bottom: 16px;
+
+      p {
+        line-height: 14px;
+        color: $white;
+        font-size: 12px;
+        font-weight: 700;
+        margin-left: 4px;
+      }
+    }
+    &--body {
+      display: flex;
+      gap: 118px;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 17px;
+      @media screen and (max-width: 768px) {
+        gap: 20px;
+        margin-top: 0;
+      }
+      .team-prediction {
+        display: flex;
+        align-items: center;
+        gap: 14px;
+        width: 166px;
+
+        @media screen and (max-width: 768px) {
+          width: auto;
+        }
+      }
+    }
+  }
+  &__stats {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 32px;
+
+    @media screen and (max-width: 500px) {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      margin-top: 15px;
+      column-gap: 20px;
+    }
+    &--left {
+      min-width: 120px;
+      .predict-helper {
+        color: #fff;
+        font-size: 12px;
+        margin-top: 10px;
+      }
+      .top {
+        color: #b3d6ff;
+        text-align: center;
+        font-size: 16px;
+        font-weight: 800;
+        line-height: 19px;
+
+        @media screen and (max-width: 768px) {
+          font-size: 14px;
+          text-align: left;
+        }
+      }
+      .scores {
+        color: #fff;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        margin-top: 9px;
+
+        @media screen and (max-width: 500px) {
+          align-items: flex-start;
+        }
+
+        div {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          .score {
+            font-size: 16px;
+            font-weight: 800;
+
+            @media screen and (max-width: 768px) {
+              font-size: 14px;
+            }
+          }
+          .percent {
+            font-size: 12px;
+            margin-top: 5px;
+
+            @media screen and (max-width: 768px) {
+              font-size: 11px;
+            }
+          }
+        }
+      }
+    }
+    &--middle {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+
+      .match-ended {
+        color: #b3d6ff;
+        text-align: center;
+        font-size: 16px;
+        font-weight: 800;
+        line-height: 19px;
+
+        @media screen and (max-width: 768px) {
+          font-size: 14px;
+          text-align: right;
+        }
+      }
+      .score {
+        font-size: 16px;
+        font-weight: 800;
+        color: #fff;
+        margin-top: 9px;
+
+        @media screen and (max-width: 768px) {
+          font-size: 14px;
+        }
+
+        @media screen and (max-width: 500px) {
+          text-align: right;
+        }
+      }
+    }
+    &--right {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      @media screen and (max-width: 500px) {
+        grid-column: span 2;
+        margin-top: 15px;
+      }
+      .kick-off {
+        color: #b3d6ff;
+        text-align: center;
+        font-size: 16px;
+        font-weight: 800;
+        line-height: 19px;
+
+        @media screen and (max-width: 768px) {
+          font-size: 14px;
+        }
+      }
+      .points {
+        background: url("/icons/grey.svg");
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        // background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 84.858px;
+        height: 38.978px;
+        // transform: rotate(-7.155deg);
+
+        p {
+          color: #000;
+          font-size: 20px;
+          font-weight: 800;
+          line-height: 24px;
+          text-decoration-line: underline;
+        }
+      }
+
+      .points-lemon {
+        background-image: url("/icons/lemon.svg");
+      }
+
+      .points-orange {
+        background-image: url("/icons/orange.svg");
+      }
+    }
+  }
+}
+.logo {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+
+  @media screen and (max-width: 768px) {
+    width: 20px;
+    height: 20px;
+  }
+}
+.team-input {
+  &__a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    width: 20%;
+    &__color {
+      background: #1e59ae;
+    }
+    p {
+      font-size: 18px;
+      @media screen and (max-width: 768px) {
+        font-size: 12px;
+      }
+      text-align: center;
+    }
+  }
+  &__b {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    width: 20%;
+    &__color {
+      background: #e30613;
+    }
+
+    p {
+      font-size: 18px;
+      @media screen and (max-width: 768px) {
+        font-size: 12px;
+      }
+      text-align: center;
+    }
+  }
+}
+
+.plus {
+  background-color: #000000;
+  height: 60px;
+  width: 60px;
+  border-radius: 8px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @media screen and (max-width: 768px) {
+    height: 30px;
+    width: 30px;
+    img {
+      width: 10px;
+    }
+  }
+
+  input {
+    border: none;
+    outline: none;
+    height: 40px;
+    width: 40px;
+    background-color: transparent;
+    color: $white;
+    font-size: 30px;
+    text-align: center;
+
+    @media screen and (max-width: 768px) {
+      height: 20px;
+      width: 20px;
+      font-size: 20px;
+    }
+  }
+
+  p {
+    color: #eff3f8;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+  }
+}
+
+.column {
+  color: #000000;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 120.4%;
+}

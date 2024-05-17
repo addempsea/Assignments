@@ -1,0 +1,45 @@
+.hero {
+  background: $light-blue;
+  min-height: 70vh;
+
+   @media screen and (max-width: 768px) {
+       min-height: 40vh;
+
+  }
+  &__icons {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 30vh;
+    width: 100%;
+    @media screen and (max-width: 768px) {
+      display: none;
+    }
+  }
+}
+.hero-header {
+  background: $light-blue;
+  display: flex;
+
+  &-container {
+    margin: auto;
+    text-align: center;
+  }
+
+  &-title {
+    font-size: 120px;
+    font-weight: 800;
+    letter-spacing: -5px;
+    span {
+      // transform: rotate(3deg) translateY(0px);
+      display: inline-block;
+      background: url(../../assets/icons/hero-win.svg);
+      padding: 0 30px 50px;
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+    @media screen and (max-width: 768px) {
+      font-size: 60px;
+    }
+  }
+}

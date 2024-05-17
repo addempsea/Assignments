@@ -1,0 +1,48 @@
+.right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @media screen and (max-width: 500px) {
+    grid-column: span 2;
+    margin-top: 15px;
+  }
+  .kick-off {
+    color: #b3d6ff;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 19px;
+
+    @media screen and (max-width: 768px) {
+      font-size: 14px;
+    }
+  }
+  .points {
+    background: url("/icons/grey.svg");
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    // background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 84.858px;
+    height: 38.978px;
+    // transform: rotate(-7.155deg);
+
+    p {
+      color: #000;
+      font-size: 20px;
+      font-weight: 800;
+      line-height: 24px;
+      text-decoration-line: underline;
+    }
+  }
+
+  .points-lemon {
+    background-image: url("/icons/lemon.svg");
+  }
+
+  .points-orange {
+    background-image: url("/icons/orange.svg");
+  }
+}

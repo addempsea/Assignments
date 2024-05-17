@@ -1,0 +1,57 @@
+.signup-header {
+  height: 123px;
+
+  &-container {
+    margin: auto;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    padding: 0 140px 0 80px;
+
+    @media screen and (max-width: 768px) {
+      padding: 0 20px;
+    }
+  }
+
+  &-logo {
+    font-size: 32px;
+    font-weight: 800;
+    color: $light-blue;
+
+    @media screen and (max-width: 768px) {
+      font-size: 20px;
+    }
+  }
+
+  &-navigation {
+    display: flex;
+    align-items: center;
+
+    @media screen and (max-width: 768px) {
+      display: none;
+    }
+
+    &-links {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .nav_ul {
+      width: 398px;
+      padding: 0 40px;
+    }
+
+    &-links li {
+      font-size: 18px;
+      color: $white;
+      transition: all 300ms ease-in;
+
+      @include on-hover {
+        color: $yellow;
+      }
+    }
+  }
+}

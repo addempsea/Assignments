@@ -1,0 +1,32 @@
+{
+  "name": "nuxt-app",
+  "private": true,
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "devDependencies": {
+    "@types/node": "^20.4.2",
+    "@zadigetvoltaire/nuxt-gtm": "^0.0.13",
+    "dayjs-nuxt": "^1.1.2",
+    "nuxt": "^3.3.2",
+    "nuxt-gtag": "^1.1.1",
+    "nuxt-svgo": "^3.1.0"
+  },
+  "dependencies": {
+    "@nuxtjs/cloudinary": "^2.3.4",
+    "@nuxtjs/google-fonts": "3.0.0-0",
+    "@pinia-plugin-persistedstate/nuxt": "^1.1.1",
+    "@pinia/nuxt": "0.4.10",
+    "axios": "^1.4.0",
+    "js-cookie": "^3.0.5",
+    "pinia": "2.0.36",
+    "sass": "^1.60.0",
+    "vee-validate": "^4.5.2",
+    "vue-toastification": "^2.0.0-rc.5",
+    "yup": "^0.32.9"
+  }
+}
