@@ -1,7 +1,7 @@
 			Tags and functions
 
 
-• The <dl> tag defines a description list
+• The <dl> tag defines a description list.
 
 • The <base> tag specifies the base URL/target for all relative URLs in a document
 
