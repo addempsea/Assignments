@@ -1,0 +1,82 @@
+.custom-checkbox {
+  width: 100%;
+  margin-bottom: 24px;
+
+  &-label {
+    display: block !important;
+    color: $white;
+    font-size: 18px;
+    font-weight: 600;
+    margin: 2px 0 0 40px;
+
+    span {
+      text-decoration: underline;
+      color: $light-blue;
+    }
+  }
+
+  &-field {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    transition: all 300ms ease-in-out;
+  }
+
+  &-div {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+
+    input[type="checkbox"] {
+      opacity: 0;
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 24px;
+      width: 24px;
+    }
+
+    .checkmark {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 24px;
+      width: 24px;
+      background-color: transparent;
+      border-radius: 7px;
+      border: 2px solid #e3e5e8; /* Customize the border as needed */
+    }
+
+    .checkmark::before {
+      content: "";
+      position: absolute;
+      display: none;
+    }
+
+    input[type="checkbox"]:checked + .checkmark::before {
+      display: block;
+      content: "✔"; /* Insert your desired checkmark character here */
+      text-align: center;
+      font-size: 18px; /* Customize the font size as needed */
+      line-height: 18px; /* Customize the line height as needed */
+      color: #fff; /* Customize the color of the checkmark */
+      margin: 3px 0 0 3px;
+    }
+  }
+
+  &-error {
+    margin-top: 13px;
+    color: $red;
+    text-align: left;
+    font-size: 14px;
+    line-height: 29.568px;
+  }
+
+  .right-error {
+    text-align: right !important;
+
+    @media screen and (max-width: 768px) {
+      text-align: left !important;
+    }
+  }
+}

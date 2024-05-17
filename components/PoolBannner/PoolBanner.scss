@@ -1,0 +1,78 @@
+.pool-banner {
+  background-color: $black;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 168px;
+  margin-bottom: 40px;
+
+  @media screen and (max-width: 768px) {
+    max-height: 130px;
+    height: 130px;
+  }
+
+  &-flex {
+    display: flex;
+    align-items: center;
+
+    .first-image,
+    .second-image {
+      @media screen and (max-width: 768px) {
+        display: none;
+      }
+    }
+
+    button {
+      background-color: $light-blue;
+      height: 60px;
+      width: 261px;
+      border-radius: 10px;
+      color: $white;
+      font-size: 18px;
+      font-weight: 500;
+      border: none;
+      margin-right: 58px;
+
+      @media screen and (min-width: 461px) and (max-width: 768px) {
+        width: 180px;
+        font-size: 14px;
+        margin-right: 20px;
+      }
+
+      @media screen and (max-width: 460px) {
+        width: 120px;
+        font-size: 14px;
+        margin-right: 20px;
+      }
+    }
+  }
+
+  &-text {
+    padding-left: 53px;
+
+    @media screen and (max-width: 768px) {
+      padding-left: 20px;
+    }
+
+    p {
+      color: $white;
+      font-size: 52px;
+      font-weight: 800;
+
+      @media screen and (max-width: 768px) {
+        font-size: 20px;
+      }
+    }
+
+    &-title {
+      font-size: 16px !important;
+      font-weight: 500 !important;
+      margin-bottom: 11px;
+
+      @media screen and (max-width: 768px) {
+        font-size: 18px !important;
+      }
+    }
+  }
+}

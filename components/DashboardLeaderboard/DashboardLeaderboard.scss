@@ -1,0 +1,78 @@
+.leaderboard-wrapper {
+  position: relative;
+}
+
+.leaderboard-container {
+  background: $darker-blue;
+  border-radius: 16px;
+  padding: 10px;
+  color: $white;
+  min-height: 400px;
+  max-height: 780px;
+  overflow: hidden;
+  position: relative;
+  &::after {
+    content: "";
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 59, 128, 0) 66.05%);
+    height: 100%;
+    width: 100%;
+    max-height: 590px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: rotate(-180deg);
+    opacity: 0.5;
+    pointer-events: none;
+  }
+  @media screen and (max-width: 768px) {
+    padding: 20px 10px;
+  }
+
+  &__filter {
+    select {
+      width: 100%;
+      padding: 10px;
+      border-radius: 16px;
+    }
+  }
+}
+
+%table-grid {
+  display: grid;
+  grid-template-columns: minmax(200px, auto) repeat(2, auto);
+  @media screen and (max-width: 768px) {
+    grid-template-columns: minmax(140px, auto) repeat(2, auto);
+  }
+}
+
+.off-table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+  max-height: 585px;
+  overflow: auto;
+
+  .off-table-body {
+    .off-table-row {
+      @extend %table-grid;
+      padding: 20px 10px;
+      font-size: 14px;
+      font-weight: 400;
+      margin: 12px 0;
+
+      &:nth-child(2n) {
+        background: #004699;
+        border-radius: 8px;
+      }
+    }
+    .off-table-name,
+    .off-table-predictions,
+    .off-table-points {
+      display: flex;
+      align-items: center;
+    }
+    .off-table-color {
+      margin: 0 12px 0 15px;
+    }
+  }
+}

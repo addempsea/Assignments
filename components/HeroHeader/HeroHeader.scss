@@ -1,0 +1,94 @@
+.hero {
+  background: $light-blue;
+  min-height: 100vh;
+  &__icons {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    @media screen and (max-width: 768px) {
+      display: none;
+    }
+  }
+}
+.hero-header {
+  background: $light-blue;
+  display: flex;
+
+  &-container {
+    margin: auto;
+    text-align: center;
+  }
+
+  &-title {
+    font-size: 120px;
+    font-weight: 800;
+    letter-spacing: -5px;
+    span {
+      transform: rotate(3deg) translateY(30px);
+      display: inline-block;
+      // background: $yellow;
+      background: url(../../assets/icons/hero-win.svg);
+      padding: 30px 50px;
+      background-size: contain;
+      background-repeat: no-repeat;
+      // border: 8px solid black;
+    }
+    @media screen and (max-width: 768px) {
+      font-size: 60px;
+    }
+  }
+
+  &-subtitle {
+    font-size: 24px;
+    line-height: 33px;
+    margin-top: 40px;
+    @media screen and (max-width: 768px) {
+      font-size: 16px;
+    }
+  }
+  &-input {
+    z-index: 1000000;
+    &-wrapper {
+      margin-top: 60px;
+      background: $white;
+      border-radius: 40px;
+      overflow: hidden;
+      padding: 10px 16px;
+      max-width: 816px;
+      margin: 60px auto 0 auto;
+      display: flex;
+
+      @media screen and (max-width: 768px) {
+        max-width: 90%;
+      }
+    }
+    border: none;
+    flex: 1;
+    font-size: 18px;
+    padding: 10px 16px;
+    &:focus {
+      outline: 0;
+    }
+
+    @media screen and (max-width: 768px) {
+      padding: 0;
+    }
+  }
+  &-button {
+    background: $black;
+    color: $white;
+    border: none;
+    padding: 16px 24px;
+    border-radius: 40px;
+    transition: all 300ms ease-in-out;
+    font-size: 16px;
+    line-height: 25px;
+    font-weight: 600;
+    z-index: 1000000;
+    &:hover {
+      background: $light-blue;
+    }
+  }
+}

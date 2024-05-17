@@ -1,0 +1,216 @@
+{
+	"message": "Fixtures fetched successfully",
+	"data": [
+		{
+			"id": 371,
+			"home_team": "Arsenal",
+			"home_team_score": 3,
+			"away_team": "Wolves",
+			"away_team_score": 0,
+			"has_finished": false,
+			"kickoff_time": "2023-05-28T15:30:00.000Z",
+			"competition_slug": "epl",
+			"prediction_id": 42,
+			"predicted_home_team_score": 5,
+			"predicted_away_team_score": 1,
+			"score": 3,
+			"top_predictions": [
+				{
+					"score": "5-1",
+					"percent": "100.00",
+					"fixture_id": 371
+				}
+			]
+		},
+		{
+			"id": 372,
+			"home_team": "Aston Villa",
+			"home_team_score": 2,
+			"away_team": "Brighton",
+			"away_team_score": 1,
+			"has_finished": false,
+			"kickoff_time": "2023-05-28T15:30:00.000Z",
+			"competition_slug": "epl",
+			"prediction_id": 43,
+			"predicted_home_team_score": 3,
+			"predicted_away_team_score": 2,
+			"score": 4,
+			"top_predictions": [
+				{
+					"score": "3-2",
+					"percent": "100.00",
+					"fixture_id": 372
+				}
+			]
+		},
+		{
+			"id": 373,
+			"home_team": "Brentford",
+			"home_team_score": 0,
+			"away_team": "Man City",
+			"away_team_score": 0,
+			"has_finished": false,
+			"kickoff_time": "2023-05-28T15:30:00.000Z",
+			"competition_slug": "epl",
+			"prediction_id": 44,
+			"predicted_home_team_score": 1,
+			"predicted_away_team_score": 2,
+			"score": 0,
+			"top_predictions": [
+				{
+					"score": "1-2",
+					"percent": "100.00",
+					"fixture_id": 373
+				}
+			]
+		},
+		{
+			"id": 374,
+			"home_team": "Chelsea",
+			"home_team_score": 1,
+			"away_team": "Newcastle",
+			"away_team_score": 1,
+			"has_finished": false,
+			"kickoff_time": "2023-05-28T15:30:00.000Z",
+			"competition_slug": "epl",
+			"prediction_id": 45,
+			"predicted_home_team_score": 0,
+			"predicted_away_team_score": 0,
+			"score": 4,
+			"top_predictions": [
+				{
+					"score": "0-0",
+					"percent": "100.00",
+					"fixture_id": 374
+				}
+			]
+		},
+		{
+			"id": 377,
+			"home_team": "Leeds",
+			"home_team_score": 0,
+			"away_team": "Spurs",
+			"away_team_score": 1,
+			"has_finished": false,
+			"kickoff_time": "2023-05-28T15:30:00.000Z",
+			"competition_slug": "epl",
+			"prediction_id": 48,
+			"predicted_home_team_score": 2,
+			"predicted_away_team_score": 2,
+			"score": 0,
+			"top_predictions": [
+				{
+					"score": "2-2",
+					"percent": "100.00",
+					"fixture_id": 377
+				}
+			]
+		},
+		{
+			"id": 379,
+			"home_team": "Man Utd",
+			"home_team_score": 1,
+			"away_team": "Fulham",
+			"away_team_score": 1,
+			"has_finished": false,
+			"kickoff_time": "2023-05-28T15:30:00.000Z",
+			"competition_slug": "epl",
+			"prediction_id": 50,
+			"predicted_home_team_score": 3,
+			"predicted_away_team_score": 0,
+			"score": 0,
+			"top_predictions": [
+				{
+					"score": "3-0",
+					"percent": "100.00",
+					"fixture_id": 379
+				}
+			]
+		},
+		{
+			"id": 376,
+			"home_team": "Everton",
+			"home_team_score": 0,
+			"away_team": "Bournemouth",
+			"away_team_score": 0,
+			"has_finished": false,
+			"kickoff_time": "2023-05-28T15:30:00.000Z",
+			"competition_slug": "epl",
+			"prediction_id": 47,
+			"predicted_home_team_score": 2,
+			"predicted_away_team_score": 0,
+			"score": 1,
+			"top_predictions": [
+				{
+					"score": "2-0",
+					"percent": "100.00",
+					"fixture_id": 376
+				}
+			]
+		},
+		{
+			"id": 375,
+			"home_team": "Crystal Palace",
+			"home_team_score": 0,
+			"away_team": "Nottingham Forest",
+			"away_team_score": 1,
+			"has_finished": false,
+			"kickoff_time": "2023-05-28T15:30:00.000Z",
+			"competition_slug": "epl",
+			"prediction_id": 46,
+			"predicted_home_team_score": 3,
+			"predicted_away_team_score": 1,
+			"score": 1,
+			"top_predictions": [
+				{
+					"score": "3-1",
+					"percent": "100.00",
+					"fixture_id": 375
+				}
+			]
+		},
+		{
+			"id": 378,
+			"home_team": "Leicester",
+			"home_team_score": 1,
+			"away_team": "West Ham",
+			"away_team_score": 0,
+			"has_finished": false,
+			"kickoff_time": "2023-05-28T15:30:00.000Z",
+			"competition_slug": "epl",
+			"prediction_id": 49,
+			"predicted_home_team_score": 3,
+			"predicted_away_team_score": 3,
+			"score": 0,
+			"top_predictions": [
+				{
+					"score": "3-3",
+					"percent": "100.00",
+					"fixture_id": 378
+				}
+			]
+		},
+		{
+			"id": 380,
+			"home_team": "Southampton",
+			"home_team_score": 2,
+			"away_team": "Liverpool",
+			"away_team_score": 2,
+			"has_finished": false,
+			"kickoff_time": "2023-05-28T15:30:00.000Z",
+			"competition_slug": "epl",
+			"prediction_id": 51,
+			"predicted_home_team_score": 3,
+			"predicted_away_team_score": 4,
+			"score": 0,
+			"top_predictions": [
+				{
+					"score": "3-4",
+					"percent": "100.00",
+					"fixture_id": 380
+				}
+			]
+		}
+	],
+	"status": true
+}

@@ -1,0 +1,206 @@
+.select {
+  width: 1085px;
+  max-height: 80vh;
+  overflow-y: auto;
+
+  @media screen and (min-width: 1441px) {
+    max-height: 90vh;
+  }
+
+  @media screen and (max-width: 1200px) {
+    width: 100%;
+  }
+
+  &-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 43px 0 52px;
+    height: 126px;
+    box-shadow: 0px 6px 12px 0px rgba(2, 23, 89, 0.04);
+
+    @media screen and (max-width: 768px) {
+      padding: 0 20px;
+    }
+
+    &-meta {
+      display: flex;
+      align-items: center;
+
+      &-image {
+        width: 52px;
+        height: 64px;
+        margin-right: 24px;
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+
+      &-desc {
+        &-name {
+          color: #050f1e;
+          font-size: 24px;
+          font-weight: 700;
+          margin-bottom: 8.4px;
+
+          @media screen and (max-width: 768px) {
+            font-size: 20px;
+          }
+        }
+
+        &-start {
+          color: rgba(22, 22, 22, 0.6);
+          font-size: 16px;
+          font-weight: 400;
+        }
+      }
+    }
+
+    &-profile {
+      display: flex;
+      align-items: center;
+
+      @media screen and (max-width: 768px) {
+        display: none;
+      }
+
+      &-desc {
+        color: #999;
+        // font-family: Lato;
+        font-size: 12px;
+        font-weight: 700;
+        margin-bottom: 8px;
+        text-align: right;
+      }
+
+      &-username {
+        color: $black;
+        // font-family: Inter;
+        font-size: 16px;
+        font-weight: 600;
+        text-align: right;
+      }
+
+      &-avatar {
+        width: 40px;
+        height: 40px;
+        margin-left: 20px;
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          border-radius: 100%;
+        }
+      }
+    }
+  }
+
+  &-bottom {
+    background: #f0f2f6;
+    box-shadow: 0px 6px 12px 0px rgba(2, 23, 89, 0.04);
+    padding: 39px 146px 52px;
+    min-height: 722px;
+
+    @media screen and (min-width: 769px) and (max-width: 1200px) {
+      padding: 25px 50px; 
+    }
+
+    @media screen and (max-width: 768px) {
+      padding: 20px;
+    }
+
+    &-title {
+      color: $black;
+      font-size: 24px;
+      text-transform: uppercase;
+      font-weight: 700;
+      margin-bottom: 39px;
+      text-align: center;
+
+      @media screen and (max-width: 768px) {
+        margin-bottom: 20px;
+      }
+    }
+
+    &-grid {
+      display: grid;
+      grid-template-columns: repeat(7, 1fr);
+      gap: 24px;
+
+      @media screen and (min-width: 769px) and (max-width: 1200px) {
+        grid-template-columns: repeat(4, 1fr);
+      }
+
+      @media screen and (max-width: 768px) {
+        grid-template-columns: repeat(3, 1fr);
+      }
+
+      &-team-card {
+        background-color: $white;
+        height: 130px;
+        border-radius: 8px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        cursor: pointer;
+        transition: all 300ms ease-in-out;
+
+        &:hover {
+          transform: scale(1.02);
+          transition: all 300ms ease-in-out;
+        }
+
+        &-top {
+          display: flex;
+          height: 90px;
+          align-items: center;
+          justify-content: center;
+
+          p {
+            font-size: 16px;
+          }
+        }
+      }
+    }
+
+    &-buttons {
+      display: flex;
+      margin-top: 60px;
+      align-items: center;
+      justify-content: center;
+
+      button {
+        height: 54px;
+        display: flex;
+        padding: 16px 40px;
+        justify-content: center;
+        align-items: center;
+        border-radius: 8px;
+        background: $light-blue;
+        border: none;
+        outline: none;
+        color: $white;
+        font-size: 16px;
+        transition: all 300ms ease-in-out;
+
+        &:active {
+          border: none;
+          outline: none;
+        }
+
+        &:hover {
+          opacity: 0.7;
+          transition: all 300ms ease-in-out;
+        }
+
+        &:first-of-type {
+          margin-right: 20px;
+        }
+      }
+    }
+  }
+}
