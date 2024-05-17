@@ -4,7 +4,7 @@
   <Footer />
 </template>
 
-<script lang="ts">
+<script lang="ts" setup>
 definePageMeta({
   middleware: ["auth"],
 });
