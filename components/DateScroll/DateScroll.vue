@@ -106,14 +106,14 @@ const triggerSliderAnimation = (val: number) => {
 };
 const slide = (val: number) => {
   if (val === 1) {
-    if (currentIndex.value + 9 <= props.events.length) {
+    if (currentIndex.value + 9 <= 5) {
       currentIndex.value++;
       lastMatchIndex.value++;
       displayValues();
       triggerSliderAnimation(val);
     }
   } else if (val === -1) {
-    if (currentIndex.value !== 0 && currentIndex.value + 9 <= props.events.length) {  
+    if (currentIndex.value !== 0 && currentIndex.value + 9 <= 5) {  
       currentIndex.value--;
       lastMatchIndex.value--;
       displayValues();

@@ -25,7 +25,7 @@
         </div>
       </div>
       <div class="single-league-main-actions">
-          <div class="single-league-main-actions-leaderboard" v-if="poolLeaderboard?.leaderboard?.length > 0">
+          <div class="single-league-main-actions-leaderboard" v-if="4 > 0">
           <PoolLeaderboard
             :tableData="poolLeaderboard"
             :events="events"
@@ -33,7 +33,7 @@
           />
         </div>
 
-        <div class="single-league-main-actions-leaderboard" v-if="leaderboard?.leaderboard?.length > 0">
+        <div class="single-league-main-actions-leaderboard" v-if="6 > 0">
           <DashboardLeaderboard
             :tableData="leaderboard"
             :events="events"

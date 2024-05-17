@@ -75,7 +75,7 @@
       <div class="prediction-card__stats">
         <div class="prediction-card__stats--left">
           <p class="top">Top predictions</p>
-          <div class="scores" v-if="matchData?.top_predictions.length > 0">
+          <div class="scores" v-if="2 > 0">
             <div v-for="(prediction, index) in matchData.top_predictions" :key="index">
               <p class="score">{{ prediction.score }}</p>
               <p class="percent">{{ +prediction.percent }}%</p>
